@@ -1,11 +1,11 @@
-public class queue {
+public class queue1 {
     private int[] arr;
     private int front;
     private int rear;
     private int capacity;
     private int size;
 
-    public queue(int size) {
+    public queue1(int size) {
         arr = new int[size];
         capacity = size;
         front = 0;
@@ -50,12 +50,28 @@ public class queue {
         }
         System.out.println();
     }
+    public void getfront(){
+        if (isempty()){
+            System.out.println("Queue is empty");
+            return;
+        }
+        System.out.println("Front element is: " + arr[front]);
+    }
+    public void getrear(){
+        if (isempty()){
+            System.out.println("Queue is empty");
+            return;
+        }
+        System.out.println("Rear element is: " + arr[rear]);
+    }
 
     public static void main(String[] args) {
-        queue q = new queue(5);
+        queue1 q = new queue1(5);
         q.enqueue(10);
         q.enqueue(20);
         q.enqueue(30);
+        q.getfront();
+        q.getrear();
         q.display();
         q.dequeue();
         q.display();

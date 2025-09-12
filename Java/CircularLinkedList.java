@@ -20,7 +20,7 @@ class CircularLinkedList {
     public void insertAtStart(int data) {
         Node newNode = new Node(data);
         if (last == null) {
-            last = newNode;
+            last = newNode;   
             last.next = last;
         } else {
             newNode.next = last.next;
