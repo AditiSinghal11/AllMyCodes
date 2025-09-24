@@ -14,11 +14,11 @@ void display(student s) {
 int main() {
     student s;
     printf("Enter roll number: ");
-    scanf("%d", &s.roll_no);
+    scanf("%d", &s.roll_no);// make all arguments fall in one line student s=[101,"John",3.5]; display(s);
     printf("Enter name: ");
     scanf("%s", s.name);
     printf("Enter GPA: ");
     scanf("%f", &s.gpa);
-    display(s.roll_no, s.name, s.gpa);
+    display(s);
     return 0;
 }
