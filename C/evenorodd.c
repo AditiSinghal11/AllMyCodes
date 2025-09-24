@@ -8,6 +8,6 @@ classifyEvenOrOdd(int number){
 }
 int main(){
     int number = 7;
-    classifyEvenOrOdd();
+    classifyEvenOrOdd(number);
     return 0;   
 }
