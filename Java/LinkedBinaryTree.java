@@ -3,13 +3,11 @@
 //2. number of leaf nodes   
 //3. number of internal nodes
 //using java tree implementation ,abstract classes and binary tree extending binary tree
-public class tree2{}
-
- interface Position<T> { T getElement(); }
+interface Position<T> { T getElement(); }
 
 abstract class AbstractTree<T> {
     public abstract Position<T> root();
-    public abstract Position<T> left(Position<T> p);
+    public abstract Position<T> left(Position<T> p);    
     public abstract Position<T> right(Position<T> p);
 
     public int size(Position<T> p) {
