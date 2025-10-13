@@ -10,7 +10,7 @@ public class BinaryTreeInOrder {
         }
     }
 
-    // Root of the Binary Tree
+    // Root of the Binary Tree000
     Node root;
 
     // Insert a node into the binary tree (for simplicity, insert as a BST)
